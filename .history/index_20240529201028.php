@@ -99,7 +99,7 @@ if (isBot()) {
             var userAnswer = parseInt(userInput);
             if (!isNaN(userAnswer) && userAnswer === captcha.result) {
                 alert('CAPTCHA verification successful! Redirecting to Google...');
-                window.location.href = redirectTo;
+                window.location.href = 'https://www.google.com';
             } else {
                 alert('CAPTCHA verification failed. Please try again.');
                 displayCaptcha();
